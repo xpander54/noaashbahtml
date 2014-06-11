@@ -1,0 +1,361 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NOA ASHBA</title>
+	
+	<link href="bootstrap/css/bootstrap.css" rel="StyleSheet" type="text/css" />
+
+	<link href="css/estilo.css" rel="StyleSheet" type="text/css" />
+
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+	<!-- repro -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" media="all" /><!-- scroll in playlist -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.selectbox.css" /><!-- playlist selector dropdown --> 
+
+
+        <link rel="stylesheet" type="text/css" href="css/html5audio_default.css" />
+        <link rel="stylesheet" type="text/css" href="css/html5audio_playlist_selector.css" />
+		
+		
+        <script type="text/javascript" src="js/swfobject.js"></script><!-- flash backup --> 
+		
+        <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script><!-- mobile drag/sort -->
+        <script type="text/javascript" src="js/jquery.XDomainRequest.js"></script><!-- ofm ie9 and below fix -->
+        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script><!-- scroll in playlist -->
+        <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script><!-- scroll in playlist -->
+        <script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script><!-- playlist selector dropdown -->
+        <script type="text/javascript" src="js/id3-minimized.js"></script><!-- id3 tags -->
+        <script type="text/javascript" src="http://www.youtube.com/player_api"></script><!-- youtube -->
+        <script type="text/javascript" src="js/jquery.apYoutubePlayer.min.js"></script><!-- youtube -->
+        <script type="text/javascript" src="js/jquery.apPlaylistManager.min.js"></script>
+        <script type="text/javascript" src="js/jquery.apTextScroller.min.js"></script><!-- scrollable song name -->
+        <script type="text/javascript" src="js/jquery.html5audio.min.js"></script>
+        <script type="text/javascript" src="js/jquery.html5audio.func.js"></script>
+        
+        <script type="text/javascript" src="js/jquery.html5audio.settings_playlist_selector.js"></script>
+	<!-- /repro -->
+
+	<script src="bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+
+	<section class="cont-100 header-cont">
+		<header class="main ">
+
+			<div class="header-logo">
+
+				<img src="img/logo.png" alt="Noa Ashba">
+				
+			</div>
+
+			<div class="header-smedia">
+				
+				
+					
+					<ul class="smedia-ul">
+						<li>
+							
+							<div class="icon-smedia">
+								<a href="https://www.facebook.com/noaashba">
+									
+									<img src="img/socialm/fb.png" alt="facebook">
+								
+								</a>
+							</div>
+		
+						</li>
+						<li>
+							
+							<div class="icon-smedia">
+								<a href="http://twitter.com/noaashba">
+									
+									<img src="img/socialm/twitter.png" alt="Twitter">
+								
+								</a>
+							</div>
+
+						</li>
+						<li>
+							<div class="icon-smedia">
+								<a href="https://www.google.com/+NOAASHBA">
+									
+									<img src="img/socialm/gplus.png" alt="Google Plus">
+	
+								</a>
+							</div>
+
+						</li>
+						<!-- <li>
+							<div class="icon-smedia">
+								<a href="">
+									
+									<img src="img/socialm/ytube.png" alt="youtube">
+						
+								</a>
+							</div>
+						
+						</li> -->
+						<li>
+
+							<div class="icon-smedia soundcloud ">
+								<a href="https://soundcloud.com/noaashba">
+									
+									<img src="img/socialm/soundcloud.png" alt="soundcloud">
+
+								</a>
+							</div>
+							
+
+						</li>
+						<!-- <li>
+								<div class="icon-smedia">
+									<a href="">
+										
+										<img src="img/socialm/instagram.png" alt="instagram">
+									
+									</a>
+						
+								</div>
+						
+						</li> -->
+						<li>
+							
+							<div class="icon-smedia">
+								<a href="mailto:bookings@noaashba.com">
+									
+									<img src="img/socialm/mail.png" alt="e-mail">
+								
+								</a>
+							</div>
+
+						</li>
+					</ul>
+
+
+
+			</div>
+			
+		</header>
+	</section>
+
+	<section class="cont-100 img-cont">
+		
+		<section class="main bg-noa">
+
+			<div class="index-nfo">
+				<div class="disco-cover">
+					<img src="img/portada.jpg" alt="Cristaliza - Noa ASHBA">
+					
+				</div>
+				<div class="disco-nfo">
+					
+					<!-- <h3>
+						
+						CRISTALIZA
+					
+					</h3> -->
+
+					<!-- <p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt 
+					</p> -->
+
+					<div class="repro">
+
+
+
+						<div id="componentWrapper">
+        
+				       		 <div class="playerHolder">
+				             
+				            	  <!-- song name -->
+				                  <div class="player_mediaName_Mask">
+				                 	  <div class="player_mediaName"></div>
+				                  </div>
+				                  
+				                  <!-- song time -->
+				                  <div class="player_mediaTime">
+				                  	  <div class="player_mediaTime_current">0:00</div><div class="player_mediaTime_total">0:00</div>
+				                  </div>
+				             
+				                  <div class="player_controls">
+				                  	  <!-- previous -->
+				                      <div class="controls_prev"><img src='media/data/icons/set1/prev.png' alt='controls_prev'/></div>
+				                      <!-- pause/play -->
+				                      <div class="controls_toggle"><img src='media/data/icons/set1/play.png' alt='controls_toggle'/></div>
+				                      <!-- next -->
+				                      <div class="controls_next"><img src='media/data/icons/set1/next.png' alt='controls_next'/></div>
+				                      
+				                 	  <!-- volume -->
+				                      <div class="player_volume"><img src='media/data/icons/set1/volume.png' alt='player_volume'/></div>
+				                      <div class="volume_seekbar">
+				                         <div class="volume_bg"></div>
+				                         <div class="volume_level"></div>
+				                         <!-- volume tooltip -->
+				                  		 <div class="player_volume_tooltip"><p></p></div>
+				                      </div>
+				                      
+				                      <!-- loop 
+				                      <div class="player_loop"><img src='media/data/icons/set1/loop.png' alt='player_loop'/></div>
+				                      <!-- shuffle
+				                      <div class="player_shuffle"><img src='media/data/icons/set1/shuffle.png' alt='player_shuffle'/></div>
+				                      <!-- download -->
+				                      <!-- <div class="player_download"><img src='media/data/icons/set1/download.png' alt="player_download"/></div> -->
+				                  </div>
+				                  
+				                  <!-- progress -->
+				                  <div class="player_progress">
+				                      <div class="progress_bg"></div>
+				                      <div class="load_progress"></div>
+				                      <div class="play_progress"></div>
+				                      <!-- progress tooltip -->
+				                  	  <div class="player_progress_tooltip"><p></p></div>
+				                  </div>
+				                  
+				             </div>
+				              
+				             <div class="playlistHolder">
+				                 <div class="componentPlaylist">
+				                     <div class="playlist_inner">
+				                     	<!-- playlist items are appended here! --> 
+				                     </div>
+				                 </div>
+				                 <!-- preloader --> 
+				                 <div class="preloader"></div>
+				             </div>
+				        
+				        </div>  
+				             
+				        <!-- PLAYLIST LIST -->
+				        <div id="playlist_list">
+				                     
+				             <!-- local playlist -->
+				             <ul id='playlist1'>
+				                 <li class= 'playlistItem' data-type='local' data-mp3='mp3/01_Noa_Ashba_-_Resonador.mp3'  data-download="mp3/01_Noa_Ashba_-_Resonador.mp3"><a class='playlistNonSelected' href='#'>Resonador</a><a class='dlink' href='#' data-dlink='mp3/rola1.mp3'><img src='media/data/dlink.png' alt = 'download'/></a></li>
+
+				                 <li class= 'playlistItem' data-type='local' data-mp3='mp3/02_Noa_Ashba_-_Tu_me_Dominas'  data-download="mp3/02_Noa_Ashba_-_Tu_me_Dominas.mp3"><a class='playlistNonSelected' href='#'>Tu me dominas</a><a class='dlink' href='#' data-dlink='mp3/rola2.mp3'><img src='media/data/dlink.png' alt = 'download'/></a></li>
+
+				                 <li class= 'playlistItem' data-type='local' data-mp3='mp3/03_Noa_Ashba_-_Usame.mp3'  data-download="mp3/03_Noa_Ashba_-_Usame.mp3"><a class='playlistNonSelected' href='#'>Úsame</a><a class='dlink' href='#' data-dlink='mp3/03_Noa_Ashba_-_Usame.mp3'><img src='media/data/dlink.png' alt = 'download'/></a></li>
+
+				                 <li class= 'playlistItem' data-type='local' data-mp3='mp3/04_Noa_Ashba_-_Miss_America.mp3'  data-download="mp3/04_Noa_Ashba_-_Miss_America.mp3"><a class='playlistNonSelected' href='#'>Miss América</a><a class='dlink' href='#' data-dlink='mp3/04_Noa_Ashba_-_Miss_America.mp3'><img src='media/data/dlink.png' alt = 'download'/></a></li>
+
+				                 <li class= 'playlistItem' data-type='local' data-mp3='mp3/05_Noa_Ashba_-_Ser_lo_que_no_soy.mp3'  data-download="mp3/05_Noa_Ashba_-_Ser_lo_que_no_soy.mp3"><a class='playlistNonSelected' href='#'>Ser lo que no soy</a><a class='dlink' href='#' data-dlink='mp3/05_Noa_Ashba_-_Ser_lo_que_no_soy.mp3'><img src='media/data/dlink.png' alt = 'download'/></a></li>
+
+
+				                 
+				             </ul>
+				             
+				             
+				             
+				        </div>
+						
+
+
+						
+						
+						
+
+					<!-- /repro -->
+					</div>
+
+					<div class="descarga-btn">
+						<div class="descargar col-sm-6">
+							<a href="mp3/Noa_Ashba_-_Cristaliza.zip">
+								
+
+								Descarga >
+							</a>
+						
+						</div>
+
+						<div class="descargar donar col-sm-6">
+							
+							Donar >
+						
+						</div>
+						
+					</div>
+
+
+					
+				</div>
+			</div>
+
+		</section>
+	</section>
+
+	<section class="cont-100 menu1">
+		<nav class="main">
+
+			<ul class="menu1-ul">
+				<li><a href="#">
+					<img src="img/menu2/1.png" alt="info">
+					<p>
+						INFO						
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="img/menu2/2.png" alt="info">
+					<p>
+						MEDIA
+					</p>
+					
+				</a></li>
+				<li><a href="#">
+					<img src="img/menu2/3.png" alt="info">
+					<p>
+						TIENDA
+					</p>
+				</a></li>
+				<li><a href="#">
+					<img src="img/menu2/4.png" alt="info">
+					<p>
+						CONTACTO
+					</p>
+
+				</a></li>
+			</ul>
+			
+		</nav>
+	</section>
+
+	<section class="cont-100 menu2">
+		<section class="main">
+
+			<ul class="menu2-ul">
+				<li><a href="#">
+						/CRÉDITOS	
+				</a></li>
+				<li><a href="#">
+					/EVENTOS
+
+				</a></li>
+				<li><a href="#">
+					/PRENSA
+
+				</a></li>
+			</ul>
+
+			
+			
+		</section>
+
+		
+	</section>
+	<section class="cont-100">
+		<footer class="main">
+
+			<div class="footer-logo">
+				<img src="img/logo-footer.png" alt="noa ashba">
+			</div>
+			
+		</footer>
+	</section>
+
+
+</body>
+</html>
