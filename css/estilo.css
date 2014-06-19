@@ -269,7 +269,7 @@ body
 
 .menu1-ul
 {
-	
+	list-style: none;
 }
 
 .menu1-ul li
@@ -319,6 +319,78 @@ body
 
 /* /menu2 */
 
+
+/* animated-content
+ */
+
+.animated-content
+{
+
+	 width:100%;
+	 height:20px;
+	 overflow: hidden;
+	 position: relative;
+	
+	-webkit-transition: all 1s ease-in-out;
+  	-moz-transition: all 1s ease-in-out;
+  	-o-transition: all 1s ease-in-out;
+  	transition: all 1s ease-in-out;
+
+}
+
+.display-block
+{
+
+	display: block !important;
+}
+
+.animated-content2
+{ 
+	height: 500px;
+	display: block;
+}
+
+.indx-img1
+{
+	max-width: 400px;
+	width: 60%;
+	margin:1em 0;
+	float: right;
+	border: solid 5px rgb(114,177,164);
+	display: none;
+}
+
+.indxNfo
+{
+	float: left;
+	width: 70%;
+	height: 80%;
+	overflow: hidden;
+	color: #fff;
+	font-size: 1.5em;
+	padding: 1em;
+}
+
+.indxNfo h1
+{
+	color: #db686a;
+}
+
+.left-index
+{
+	position: relative;
+}
+
+.tienda-img
+{
+	height: 32px;
+
+}
+
+
+/* /animated-content
+ */
+
 /* footer */
 
 .footer-logo
@@ -328,6 +400,7 @@ body
 	height: 31px;
 
 }
+
 
 
 

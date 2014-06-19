@@ -3,13 +3,13 @@
 	<meta charset="utf-8">
 	<title>NOA ASHBA</title>
 	
-	<link href="bootstrap/css/bootstrap.css" rel="StyleSheet" type="text/css" />
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
 	<link href="css/estilo.css" rel="StyleSheet" type="text/css" />
 
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 
-	<link rel="stylesheet" href="shadowbox-3.0.3/shadowbox.css" />
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
@@ -36,7 +36,7 @@
         <script type="text/javascript" src="js/jquery.html5audio.settings_playlist_selector.js"></script>
 	<!-- /repro -->
 
-	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -289,26 +289,26 @@
 		<nav class="main">
 
 			<ul class="menu1-ul">
-				<li><a href="#">
+				<li class="aMenu1" data-menu="info"><a href="javascript:void(0);">
 					<img src="img/menu2/1.png" alt="info">
 					<p>
 						INFO						
 					</p>
 				</a></li>
-				<li><a href="#">
+				<li class="aMenu1" data-menu="media"><a href="javascript:void(0);">
 					<img src="img/menu2/2.png" alt="info">
 					<p>
 						MEDIA
 					</p>
 					
 				</a></li>
-				<li><a href="#">
-					<img src="img/menu2/3.png" alt="info">
+				<li><a href="javascript:void(0);">
+					<img src="img/menu2/3.png" class='tienda-img' alt="info">
 					<p>
 						TIENDA
 					</p>
 				</a></li>
-				<li><a href="#">
+				<li data-menu="contacto" class="aMenu1"><a href="javascript:void(0);">
 					<img src="img/menu2/4.png" alt="info">
 					<p>
 						CONTACTO
@@ -318,6 +318,55 @@
 			</ul>
 			
 		</nav>
+
+	</section>
+
+	<section class="cont-100">
+
+		<div class="main">
+			
+
+		
+
+			<div class="animated-content">
+
+				<div class="row">
+					
+
+					<div class="col-sm-6 col-md-6">
+						
+
+						<img class='indx-img1' src="img/indx.png" alt="música noa ashba">
+					
+					</div>
+
+					<div class="col-sm-6 col-md-6">
+
+						<div class="indxNfo">
+							
+							<h1>NOA ASHBA</h1>
+
+							<p>
+								
+							Levitando el océano, acostado sobre las olas, sobre mi tabla con el reflejo del sol en el agua, en mis ojos a la edad de 17 ya jugaba con ritmos y armonías en una composición mental de sonidos suaves, frescos y envolventes…
+
+							</p>
+							<p>
+								
+							Compuse y cante mi música por casi todo el continente Latino Americano.
+							
+							</p>
+						</div>
+					
+					</div>
+
+
+				</div>
+			</div>
+		
+		</div>
+
+
 	</section>
 
 	<section class="cont-100 menu2">
@@ -353,8 +402,7 @@
 		</footer>
 	</section>
 
-	<script type="text/javascript" src="0.shadowbox3.3/shadowbox.js">
-	</script>
+	
 
 	<script type="text/javascript" src="js/script.js">
 	</script>
